@@ -1,0 +1,34 @@
+name: Anubis Guardian Mech
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '41 */6 * * *'
+  push:
+    paths:
+      - '.github/workflows/anubis-guardian.yml'
+      - 'tools/guardian_mech.py'
+  pull_request:
+    paths:
+      - '.github/workflows/anubis-guardian.yml'
+      - 'tools/guardian_mech.py'
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: anubis-guardian-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  guardian:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Check Anubis Pages and OpenEngine build status
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_STEP_SUMMARY: ${{ github.step_summary }}
+        run: python3 tools/guardian_mech.py
