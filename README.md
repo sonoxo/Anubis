@@ -16,19 +16,7 @@ Each demo lives in its own folder with its own code and README, so any one of th
 
 ## Demos
 
-### 001 · STRIX HX-9
-
-<a href="https://thtbee.github.io/waggles/strix-hx9/"><img src="assets/previews/strix-hx9.webp" alt="STRIX HX-9 parked on a desert landing pad at golden hour" width="100%"></a>
-
-A real-time 3D concept gunship. Launch it, fly it and fire its cannon, rockets and missiles, then switch to x-ray, power-flow, airflow or exploded views to see how it is put together. Six environments, from an arctic fjord under the aurora to a rain-soaked neon city.
-
-| | |
-| --- | --- |
-| **Play** | [thtbee.github.io/waggles/strix-hx9](https://thtbee.github.io/waggles/strix-hx9/) |
-| **Folder** | [`strix-hx9/`](strix-hx9/) |
-| **Built with** | Three.js, WebGL, Web Audio |
-
-### 002 · Bee's Waggle
+### 001 · Bee's Waggle
 
 <a href="https://thtbee.github.io/waggles/bees-waggle/"><img src="assets/previews/bees-waggle.webp" alt="A bee on a peony rendered as a pink and blue risograph print" width="100%"></a>
 
@@ -41,6 +29,18 @@ The daily life of a bee, rendered as an animated radiograph. Five scenes follow 
 | **Play** | [thtbee.github.io/waggles/bees-waggle](https://thtbee.github.io/waggles/bees-waggle/) |
 | **Folder** | [`bees-waggle/`](bees-waggle/) |
 | **Built with** | Three.js, WebGL, one HTML file |
+
+### 002 · STRIX HX-9
+
+<a href="https://thtbee.github.io/waggles/strix-hx9/"><img src="assets/previews/strix-hx9.webp" alt="STRIX HX-9 parked on a desert landing pad at golden hour" width="100%"></a>
+
+A real-time 3D concept gunship. Launch it, fly it and fire its cannon, rockets and missiles, then switch to x-ray, power-flow, airflow or exploded views to see how it is put together. Six environments, from an arctic fjord under the aurora to a rain-soaked neon city.
+
+| | |
+| --- | --- |
+| **Play** | [thtbee.github.io/waggles/strix-hx9](https://thtbee.github.io/waggles/strix-hx9/) |
+| **Folder** | [`strix-hx9/`](strix-hx9/) |
+| **Built with** | Three.js, WebGL, Web Audio |
 
 ### 003 · Skyward Pagoda
 
@@ -68,8 +68,8 @@ The full workflow and every prompt used to make each demo will be shared here so
 waggles/
 ├── index.html        Gallery page
 ├── assets/           Gallery styles, icon and demo previews
-├── strix-hx9/        Demo 001
-├── bees-waggle/      Demo 002
+├── bees-waggle/      Demo 001
+├── strix-hx9/        Demo 002
 ├── skyward-pagoda/   Demo 003
 └── tools/serve.py    Local server
 ```
