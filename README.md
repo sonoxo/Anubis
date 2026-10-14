@@ -42,7 +42,19 @@ A real-time 3D concept gunship. Launch it, fly it and fire its cannon, rockets a
 | **Folder** | [`strix-hx9/`](strix-hx9/) |
 | **Built with** | Three.js, WebGL, Web Audio |
 
-### 003 · Skyward Pagoda
+### 003 · Kestrel K-1
+
+<a href="https://thtbee.github.io/waggles/kestrel-k1/"><img src="assets/previews/kestrel-k1.webp" alt="The Kestrel K-1 humanoid robot and its hand in white and black liveries" width="100%"></a>
+
+A full humanoid robot built to be mechanically true: every joint, tendon, cable and actuator is real geometry driven by one physical state, so the whole machine moves in exact coordination. Pose it, set it walking, switch between body and hand, and inspect it in glass, exploded, power, signal, thermal, section and drawing views.
+
+| | |
+| --- | --- |
+| **Play** | [thtbee.github.io/waggles/kestrel-k1](https://thtbee.github.io/waggles/kestrel-k1/) |
+| **Folder** | [`kestrel-k1/`](kestrel-k1/) |
+| **Built with** | Three.js, TypeScript, Vite, Blender |
+
+### 004 · Skyward Pagoda
 
 <a href="https://thtbee.github.io/waggles/skyward-pagoda/"><img src="assets/previews/skyward-pagoda.webp" alt="A voxel pagoda on a floating island above a sea of clouds" width="100%"></a>
 
@@ -70,7 +82,8 @@ waggles/
 ├── assets/           Gallery styles, icon and demo previews
 ├── bees-waggle/      Demo 001
 ├── strix-hx9/        Demo 002
-├── skyward-pagoda/   Demo 003
+├── kestrel-k1/       Demo 003
+├── skyward-pagoda/   Demo 004
 └── tools/serve.py    Local server
 ```
 
