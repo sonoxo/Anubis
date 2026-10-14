@@ -32,6 +32,8 @@ A real-time 3D concept gunship. Launch it, fly it and fire its cannon, rockets a
 
 <a href="https://thtbee.github.io/waggles/bees-waggle/"><img src="assets/previews/bees-waggle.webp" alt="A bee on a peony rendered as a pink and blue risograph print" width="100%"></a>
 
+> ⭐ Featured by [Google on 𝕏](https://x.com/Google) in their Complex 3D Visualizations showcase.
+
 The daily life of a bee, rendered as an animated radiograph. Five scenes follow a forager from the first specimen shot through the meadow, into the nectar, back to the hive for the waggle dance, and out into the swarm. Seven film stocks change the whole look, from silver-halide X-ray to cyanotype and risograph.
 
 | | |
