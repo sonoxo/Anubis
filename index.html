@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Waggles</title>
+<meta name="description" content="Interactive browser demos by thtbee_.">
+<meta name="theme-color" content="#0e0c0a">
+<meta property="og:title" content="Waggles">
+<meta property="og:description" content="Interactive browser demos by thtbee_.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thtbee.github.io/waggles/">
+<meta property="og:image" content="https://thtbee.github.io/waggles/assets/previews/strix-hx9-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="bar">
+  <a class="mark" href="./">Waggles</a>
+  <span class="mono" id="clock" aria-hidden="true">--:--:--</span>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow mono">Interactive demos</p>
+    <h1>Small worlds<br>to <em>play with.</em></h1>
+  </section>
+
+  <ol class="exhibits">
+    <li class="exhibit" style="--accent:#ff9a3a">
+      <a class="frame" href="strix-hx9/" aria-label="Launch STRIX HX-9">
+        <img src="assets/previews/strix-hx9.webp" width="1600" height="900" alt="The STRIX HX-9 gunship parked on a desert landing pad at golden hour, with the demo's control panels around it.">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      </a>
+
+      <div class="caption">
+        <div class="num mono">No. 001</div>
+        <h2>STRIX HX-9</h2>
+        <p>Concept coaxial gunship. Fly it, fire it, cut it open.</p>
+        <ul class="envs mono" aria-label="Environments">
+          <li style="--c:#3dffb5">Borealis</li>
+          <li style="--c:#ff9a3a">Dune</li>
+          <li style="--c:#ff2bd6">Neon</li>
+          <li style="--c:#9fd8ff">Tempest</li>
+          <li style="--c:#ff4a32">Eclipse</li>
+          <li style="--c:#ffc65a">Stratos</li>
+        </ul>
+        <a class="launch" href="strix-hx9/">Launch <span aria-hidden="true">↗</span></a>
+      </div>
+    </li>
+
+    <li class="exhibit pending" aria-label="Next demo, in progress">
+      <div class="frame empty">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <span class="mono">No. 002 · Soon</span>
+      </div>
+    </li>
+  </ol>
+</main>
+
+<footer class="foot mono">
+  <span>© 2026 <a href="https://x.com/thtbee_">thtbee_ on 𝕏</a> · <a href="https://github.com/thtbee/waggles/blob/main/LICENSE">CC BY-NC 4.0</a></span>
+  <span>Desktop recommended · <a href="https://github.com/thtbee/waggles">Source ↗</a></span>
+</footer>
+
+<script>
+  const clock = document.getElementById('clock');
+  const tick = () => { clock.textContent = new Date().toLocaleTimeString('en-GB', { hour12: false }); };
+  tick(); setInterval(tick, 1000);
+
+  if (matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) {
+    document.querySelectorAll('.frame img').forEach((img) => {
+      const frame = img.parentElement;
+      frame.addEventListener('pointermove', (e) => {
+        const r = frame.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+        img.style.transform = `scale(1.06) translate(${x * -2}%, ${y * -2}%)`;
+      });
+      frame.addEventListener('pointerleave', () => { img.style.transform = ''; });
+    });
+  }
+</script>
+</body>
+</html>
